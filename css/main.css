@@ -102,18 +102,34 @@ textarea {
        font-family: "OpenSans",sans-serif;
        line-height: 1.5;
    }
+
+   header
+   {
+     position: fixed;
+     width: 100%;
+   }
+
    .headerContent
    {
      font-size: 1em;
+     height: 60px;
+     background: #f56b2a;
+     margin-top: 0;
    }
 
+   .MainContent
+   {
+  margin: auto;
+   }
    .MainMenu li
    {
      display: inline-block;
    }
-   .MainMenu
+   .MainMenu,.Menu
    {
      background: #f56b2a;
+     height: 100%;
+     margin-top:0;
    }
    li
    {
@@ -143,10 +159,20 @@ textarea {
    }
    h2
    {
-   margin-top: 3rem;
-   font-size: 1.3rem;
-   text-align: center;
+   width: 70%;
+   margin: auto;
+   margin-bottom: 20px;
+   font-size: small;
    font-family: "OpenSansSemiBold",sans-serif;
+   }
+   h1
+   {
+     font-size: small;
+   }
+   .title2
+   {
+     display: flex;
+     justify-content: flex-end;
    }
    .footer
    {
@@ -156,7 +182,8 @@ textarea {
 
    .footer2
    {
-   width: 100%;
+   width: 70%;
+   margin: auto;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -197,15 +224,27 @@ textarea {
    justify-content: space-between;
    margin-left: -1em;
    color: white;
+   width: 70%;
+   margin: auto;
    }
    .navigation a
    {
      color: white;
    }
 
- @media all (min-width:) {
-
- }
+.headerSection,.map
+{
+  width: 30%;
+  display: inline-block;
+}
+.Content
+{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 
 
 
