@@ -105,15 +105,20 @@ textarea {
    .headerContent
    {
      font-size: 1em;
+     height: 60px;
+     background: red;
+     margin-top: 0;
    }
 
    .MainMenu li
    {
      display: inline-block;
    }
-   .MainMenu
+   .MainMenu,.Menu
    {
      background: #f56b2a;
+     height: 100%;
+     margin-top:0;
    }
    li
    {
@@ -143,10 +148,17 @@ textarea {
    }
    h2
    {
-   margin-top: 3rem;
-   font-size: 1.3rem;
-   text-align: center;
+   font-size: small;
    font-family: "OpenSansSemiBold",sans-serif;
+   }
+   h1
+   {
+     font-size: small;
+   }
+   .title2
+   {
+     display: flex;
+     justify-content: flex-end;
    }
    .footer
    {
@@ -203,9 +215,17 @@ textarea {
      color: white;
    }
 
- @media all (min-width:) {
-
- }
+.headerSection,.map
+{
+  width: 30%;
+  display: inline-block;
+}
+.Content
+{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 
 
 
